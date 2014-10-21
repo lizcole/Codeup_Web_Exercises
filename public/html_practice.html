@@ -1,3 +1,10 @@
+<?php
+var_dump($_POST);
+
+
+?>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -146,6 +153,18 @@
 				</tr>
 			</table>
 
+<h2>Here is a completely random form</h2>
+
+	<form method="POST" action="/html_practice.html">
+		<p>
+			<label for="username">Username</label>
+			<input id="username" name="user" type="text" value="" placeholder="JohnnyAppleseed123">
+		</p>
+		<p>
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password">
+		</p>
+		<button type="submit"> Submit </button>
 
 			<p><a href="#top">Go to top of page...</a></p>
 	</body>
