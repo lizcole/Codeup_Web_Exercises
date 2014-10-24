@@ -7,7 +7,7 @@
 	    <textarea rows="10" cols="60" id="important"></textarea>
 
 	<script type="text/javascript">
-			
+			var timer;
 			
 			var interval = 3000;
 
@@ -17,9 +17,12 @@
 	        
 	        function autosave() {
 
-				var intervalId = setTimeout(function(){
+	        	console.log(timer);
+	        	
+				clearTimeout(timer);
 
-						clearTimeout(intervalId);
+				var timer = setTimeout(function(){
+						
 						save();
 
 				}, interval);
