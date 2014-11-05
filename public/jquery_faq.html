@@ -1,52 +1,83 @@
 <html>
 <head>
-	<title></title>
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<title>Fake Parks</title>
 	<style type="text/css">
-	.invisible {
-		display: none;
+	body {
+		background-color: purple;
+		color: white;
+	}
+
+	dt {
+		font-weight: bold;
+	}
+	h1 {
+		text-align: center;
+	}
+	.jumbotron {
+		background: url(../Pics/unicorn.jpg);
+		background-repeat: none;
+		background-position: center;
+		margin-top: 20px;
+		color: purple;
 	}
 	</style>
 </head>
-<body>
+<body class='container'>
 
-<h1>Parks of America</h1>	
+<div class='jumbotron'>
+	<h1>Parks of America</h1>	
+</div>
 
-<h3>Unicorn Park</h3>
-	<ul>
-		<li>Has Unicorns</li>
-		<li>They aren't real</li>
-		<li>They have party hats glued to their heads</li>
-		<li>They are still magical though...</li>
-	</ul>
+<div class="row clearfix">
+	
+	<div class='col-md-6 column'>
 
-<h3>Hippo Park</h3>
-	<ul>
-		<li>Has Hippos</li>
-		<li>They are Dangerous</li>
-		<li>But you can try to pet them</li>
-		<li>after you sign a waiver...</li>
-	</ul>
+		<h3>Unicorn Park</h3>
+			<ul>
+				<li>Has Unicorns</li>
+				<li>They aren't real</li>
+				<li>They have party hats glued to their heads</li>
+				<li>They are still magical though...</li>
+			</ul>
 
-<h3>T-rex Park</h3>
-	<ul>
-		<li>They have T-Rex's</li>
-		<li>They have tiny arms</li>
-		<li>Don't laugh at them</li>
-		<li>They eat ppl who laugh</li>
-	</ul>
+		<h3>Hippo Park</h3>
+			<ul>
+				<li>Has Hippos</li>
+				<li>They are Dangerous</li>
+				<li>But you can try to pet them</li>
+				<li>after you sign a waiver...</li>
+			</ul>
 
-<p>Here are few facts:</p>
+		<h3>T-rex Park</h3>
+			<ul>
+				<li>They have T-Rex's</li>
+				<li>They have tiny arms</li>
+				<li>Don't laugh at them</li>
+				<li>They eat ppl who laugh</li>
+			</ul>
+	</div>
 
-	<dl>
-		<dt>Are they fun?</dt>
-		<dd class='invisible'>Yes!</dd>
-		<dt>Are there live animals?</dt>
-		<dd class='invisible'>Yes! But they are not for petting.</dd>
-		<dt>Have animals at National Parks killed people before?</dt>
-		<dd class='invisible'>Yes!</dd>
-	</dl>
-<a href="#" id='show-answers'>Give me the answers!</a>
-
+	<div class='row-md-6 column'>
+	
+		<p>Here are some FAQ's:</p>
+			<dl>
+				<dt>Are they fun?</dt>
+				<dd>Yes!</dd>
+				<dt>Are there live animals?</dt>
+				<dd>Yes! But they are not for petting.</dd>
+				<dt>Have animals at National Parks killed people before?</dt>
+				<dd>Yes!</dd>
+			</dl>
+		<a href="#" id='show-answers'>Give me the answers!</a>
+	</div>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src='js/faq.js'></script>
 

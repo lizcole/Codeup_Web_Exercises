@@ -1,15 +1,14 @@
 $('#show-answers').click(function(event) {
 	event.preventDefault();
-	$('dd').toggleClass('invisible');
+	$('dd').slideToggle();
 });
 
 $('ul').each(function() {
 	$(this).children().first().css('font-weight', 'bold');
 });
 
-$('ul').click(function(event) {
-	event.preventDefault();
-	$(this).children().css('display', 'none');
+$('h3').click(function() {
+	$(this).next('ul').slideToggle();
 });
 
-$('li').css('cursor','pointer');
+$('h3').css('cursor','pointer');
